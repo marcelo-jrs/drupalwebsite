@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bright-white: #F7F7F7;
+    --dark-white: #EEEEEE;
+    --black: #393E46;
+    --grey: #929AAB;
+
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bright-white);
+    color: var(--black);
+}
+
+
+a:hover {
+    cursor:pointer;  
+}
+
+.header {
+    background-color: var(--grey);
+    color: var(--bright-white);
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+}
+
+.menu {
+    min-width: 250em;
+    background-color: var(--black);
+    color: var(--bright-white);
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+}
+
+.sidebar-left, .sidebar-right, .content {
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sidebar-left, .sidebar-right {
+    background-color: var(--black);
+    color: var(--bright-white);
+}
+
+.footer {
+    background-color: var(--grey);
+    width: 100%;
+    min-height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.site-branding {
+    background-color: purple;
+}

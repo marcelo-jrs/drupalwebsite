@@ -1,0 +1,16 @@
+name: Minimalistic Theme
+description: A minimalistic theme for your minimal website
+type: theme
+base theme: false
+core_version_requirement: ^8 || ^9 || ^10
+
+version: 1.0
+libraries: 
+  - minimalistic/global-styling
+regions:
+  header: Header
+  menu: Menu
+  content: Content
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  footer: Footer

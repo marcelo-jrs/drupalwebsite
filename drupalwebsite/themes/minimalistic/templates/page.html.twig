@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="header">
+        {{ page.header }}
+    </div>
+    <div class="menu">
+        {{ page.menu }}
+    </div>
+    <div class="container">
+        {% if page.sidebar_first %}
+            <div class="sidebar-left">
+                {{ page.sidebar_first }}
+            </div>
+        {% endif %}
+        <div class="content">
+            {{ page.content }}
+        </div>
+        {% if page.sidebar_second %}
+            <div class="sidebar-left">
+                {{ page.sidebar_second }}
+            </div>
+        {% endif %}
+    </div>
+    <div class="footer">
+        {{ page.footer }}
+    </div> 
+</body>
+</html>
